@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration | Enregistrement FI{% endblock %}
+
+{% block body %}
+    <section>
+
+        <h1>Ajouter une Famille d'Impact</h1>
+
+        {{ form_start(fi_registration_form) }}
+
+            <div style="display: grid; grid-template-columns: 1fr; gap: 15px">
+                <div>
+                    {{ form_label(fi_registration_form.FI_name) }}<br >
+                    {{ form_widget(fi_registration_form.FI_name) }}
+                    {{ form_errors(fi_registration_form.FI_name) }}
+                </div>
+
+                <div>
+                    {{ form_label(fi_registration_form.municipality) }}<br >
+                    {{ form_widget(fi_registration_form.municipality) }}
+                    {{ form_errors(fi_registration_form.municipality) }}
+                </div>
+
+                <div>
+                    {{ form_label(fi_registration_form.zone) }}<br >
+                    {{ form_widget(fi_registration_form.zone) }}
+                    {{ form_errors(fi_registration_form.zone) }}
+                </div>
+
+                <div>
+                    {{ form_label(fi_registration_form.contact_manager) }}<br >
+                    {{ form_widget(fi_registration_form.contact_manager) }}
+                    {{ form_errors(fi_registration_form.contact_manager) }}
+                </div>
+
+                <div>
+                    {{ form_label(fi_registration_form.fi_manager) }}<br >
+                    {{ form_widget(fi_registration_form.fi_manager) }}
+                    {{ form_errors(fi_registration_form.fi_manager) }}
+                </div>
+
+                <div>
+                    <button type="submit">Enregistrer une FI</button>
+                </div>
+            </div>
+        {{ form_end(fi_registration_form) }}
+
+    </section>
+{% endblock %}

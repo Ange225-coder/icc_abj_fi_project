@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration | Enregistrement{% endblock %}
+
+{% block body %}
+    <section>
+        <h1>Dévenir administrateur</h1>
+
+
+        {{ form_start(admin_registration_form) }}
+            <div>
+
+                <div>
+                    {{ form_widget(admin_registration_form.adminName) }}
+                    {{ form_errors(admin_registration_form.adminName) }}
+                </div>
+
+                <div>
+                    {{ form_widget(admin_registration_form.password) }}
+                    {{ form_errors(admin_registration_form.password) }}
+                </div>
+
+                <div>
+                    <button type="submit">Enregistrer</button>
+                </div>
+            </div>
+        {{ form_end(admin_registration_form) }}
+    </section>
+{% endblock %}

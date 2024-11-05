@@ -1,0 +1,202 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Impact Centre Chrétien Abidjan - Famille d'impact{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ asset('css/home_style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/public/home_versesBlock.js') }}" defer></script>
+{% endblock %}
+
+{% block body %}
+    <header>
+        {% include 'nav.html.twig' %}
+    </header>
+
+
+    <section class="fi-presentation">
+        <div class="fi-presentation__text">
+            <h1>Les familles d'impact</h1>
+
+            <p>
+                Les Familles d’Impact ou encore F.I représentent un élément essentiel de l’Église. Au delà des cultes de célébration le dimanche, les FI sont le premier lieu de socialisation des membres. Le but des FI est de fédérer tous les membres de l’Église autour de valeurs d’Impact Centre Chrétien dans un esprit de famille.
+            </p>
+        </div>
+
+        <div class="fi-presentation__img">
+            <img src="{{ asset('img/public/icc_fi_img.webp') }}" alt="impact_center_chretien_abidjan_famille_d_impact">
+        </div>
+    </section>
+
+
+    <section class="fi-reason">
+        <h1>7 bonnes raisons de fréquenter une famille d'impact</h1>
+
+        <div class="fi-reason__verses">
+
+            <div class="fi-first-reason">
+                <p class="explanation">
+                    <i class="bi bi-caret-down-square"></i> <i class="bi bi-caret-up-square"></i> <span>Parce que c'est ainsi que vivait l'église primitive du Nouveau Testament</span>
+                </p>
+
+
+                <div class="fi-first-reason__details explanation__details">
+                    <p>
+                        Le livre des Actes est très clair sur la manière dont Dieu veut que son peuple grandisse.Nous n’aurons jamais assez de pasteurs pour rencontrer chaque personne et l’aider dans ses besoins et ceux de sa famille. D’ailleurs, Dieu n’a jamais voulu qu’il en soit ainsi. Actes 2.42 -47
+                    </p>
+
+                    <p>
+                        « Ils persévéraient dans l’enseignement des apôtres, dans la communion fraternelle, dans la fraction du pain, et dans les prières (…) Tous ceux qui croyaient étaient dans le même lieu, et ils avaient tout en commun. Ils étaient chaque jour tous ensembles assidus au temple, ils rompaient le pain dans les maisons, et prenaient leur nourriture avec joie et simplicité de cœur, louant Dieu, et trouvant grâce auprès de tout le peuple. Et le Seigneur ajoutait chaque jour à l'Église ceux qui étaient sauvés ».
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="fi-second-reason">
+                <p class="explanation">
+                    <i class="bi bi-caret-down-square"></i> <span>Pour mieux comprendre la Bible</span>
+                </p>
+
+
+                <div class="fi-snd-reason__details explanation__details">
+                    <p>
+                        Si en écoutant un prédicateur vous vous êtes déjà dit : « Mais de quoi parle-t-il ? » ou bien : « je n’ai pas compris « alors le Groupe d’Impact est fait pour vous ! Le Groupe d’Impact est un bon moyen de partager vos connaissances : vous pouvez poser des questions, participer à des discussions autour d’un texte, entendre d’autres personnes partager leur compréhension des écritures et illustrer celles-ci par des exemples qui leur sont propres.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="fi-third-reason">
+                <p class="explanation">
+                    <i class="bi bi-caret-down-square"></i> <span>Pour se sentir membre de la Famille de Dieu</span>
+                </p>
+
+
+                <div class="fi-third-reason__details explanation__details">
+                    <p>
+                        La plupart des gens ayant fait partie d’un Groupe d’Impact disent que le plus grand bénéfice qu’on en tire est la relation fraternelle et les liens d’amitié qui s’y développent.
+                    </p>
+
+                    <p>
+                        Savoir que d’autres personnes vivent ou ont vécu les mêmes difficultés, nous aide et nous montre comment mettre en pratique certains principes spirituels. Dans le Nouveau Testament l’expression « les uns les autres » apparait plus de 50 fois dans le but de d’écrire les relations fraternelles. On nous y enseigne l’amour les uns pour les autres, la prière les uns pour les autres, s’accepter les uns les autres, se supporter les uns les autres, nous fortifier les uns les autres.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="fi-fourth-reason">
+                <p class="explanation">
+                    <i class="bi bi-caret-down-square"></i> <span>Pour que prier prenne tout son sens</span>
+                </p>
+
+
+                <div class="fi-fourth-reason__details explanation__details">
+                    <p>
+                        Beaucoup de gens ont du mal à prier en public. Un Groupe d’Impact est composé au plus d’une douzaine de personnes. Vous y apprendrez donc plus facilement à prier seul(e) ou collectivement.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="fi-fifth-reason">
+                <p class="explanation">
+                    <i class="bi bi-caret-down-square"></i> <span>Pour apprendre à surmonter les difficultés de la vie</span>
+                </p>
+
+
+                <div class="fi-fifth-reason__details explanation__details">
+                    <p>
+                        Le groupe d’Impact est un excellent soutien en temps de crise, de changements ou de fortes pressions. Quand quelqu’un perd son travail ou, apprend qu’un membre de sa famille est malade, le soutien des membres du groupe d’impact est vraiment précieux. La communion fraternelle est en effet une des caractéristiques des Groupes d’Impact.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="fi-sixth-reason">
+                <p class="explanation">
+                    <i class="bi bi-caret-down-square"></i> <span>Pour que partager le message de la Bonne Nouvelle devienne naturel</span>
+                </p>
+
+
+                <div class="fi-sixth-reason__details explanation__details">
+                    <p>
+                        Vous avez peut-être des amis qui ne connaissent pas Dieu, qui ont des idées préconçues au sujet de l’église et qui sont assez réticents quant au fait d’y aller. Ces mêmes personnes peuvent s’ouvrir plus facilement s’il s’agit d’une invitation à une discussion dans un groupe d’impact. Au sein du groupe, vos amis incroyants peuvent ouvertement poser des questions et exprimer leurs doutes.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="fi-seventh-reason">
+                <p class="explanation">
+                    <i class="bi bi-caret-down-square"></i> <span>Pour développer vos dons et capacités</span>
+                </p>
+
+
+                <div class="fi-seventh-reason__details explanation__details">
+                    <p>
+                        La Bible enseigne que chaque chrétien a reçu des talents et des dons afin d’en faire bénéficier les frères et sœurs en Christ. Malheureusement beaucoup de chrétiens restent au stade de spectateurs toute leur vie, parce qu’ils ne font qu’assister au culte du dimanche. Alors que vous vous investirez dans votre groupe d’impact, vous verrez croître votre confiance et votre estime personnelles. Ceci vous aidera dans votre travail, à l’église et dans tous les aspects de votre vie..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="find-fi">
+        <p>
+             <a href="{{ path('join_an_fi') }}">
+                 <i class="bi bi-geo-alt-fill"></i> <span>Trouver une famille d'impact</span>
+             </a>
+        </p>
+    </section>
+
+
+    <footer>
+
+        <div class="infos">
+
+            <div>
+                <h1>ÉGLISE LOCALE</h1>
+
+                <p>
+                    9274+4HQ, Abidjan - Côte d'Ivoire
+                </p>
+            </div>
+
+            <div>
+                <h1>TÉLÉPHONE</h1>
+
+                <p>
+                    +225 07 11 45 91 20
+                </p>
+
+                 <p>
+                     +225 07 47 83 41 04
+                 </p>
+            </div>
+
+            <div>
+                <h1>EMAIL</h1>
+
+                <p>
+                    {# faire en sorte que l'email puisse rédiriger vers un envoi d'email #}
+                    egliseiccabidjan@gmail.com
+                </p>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>© Impact Centre Chretien Abidjan {{ 'now'|date('Y') }} - Tous droits réservés</p>
+        </div>
+
+    </footer>
+{% endblock %}

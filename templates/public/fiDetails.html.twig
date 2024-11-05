@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Details de {{ fi_details.zone}} {% endblock %}
+
+{% block body %}
+    <header>
+        {% include 'nav.html.twig' %}
+    </header>
+
+
+    <section>
+        <h1>Information de la FI</h1>
+
+        <p>
+            <strong>Commune : </strong> {{ fi_details.municipality }}
+        </p>
+
+        <p>
+            <strong>Zone : </strong> {{ fi_details.zone }}
+        </p>
+
+        <p>
+            <strong>Responsable : </strong> {{ fi_details.fiManager }}
+        </p>
+
+        <p>
+            <strong>Contact : </strong> {{ fi_details.contactManager }}
+        </p>
+
+    </section>
+
+    <section>
+        <h1>Vous souhaitez: </h1>
+
+        <div>
+            <p>
+                Intégrer la Famille d'impact
+            </p>
+        </div>
+
+
+        <div>
+            <p>
+                Discuter avec le responsable
+            </p>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="infos">
+
+            <div>
+                <h1>Église locale Abidjan</h1>
+
+                <p>
+                    9274+4HQ, Abidjan - Côte d'Ivoire
+                </p>
+            </div>
+
+            <div>
+                <h1>TÉLÉPHONE</h1>
+
+                <p>
+                    +225 07 11 45 91 20
+                </p>
+
+                <p>
+                    +225 07 47 83 41 04
+                </p>
+            </div>
+
+            <div>
+                <h1>EMAIL</h1>
+
+                <p>
+                    {# faire en sorte que l'email puisse rédiriger vers un envoi d'email #}
+                    egliseiccabidjan@gmail.com
+                </p>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>©Impact Centre Chretien {{ 'now'|date('Y') }} - Tous droits réservés</p>
+        </div>
+
+    </footer>
+{% endblock %}

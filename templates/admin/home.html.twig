@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration ICC Abidjan | Espace réservé{% endblock %}
+
+{% block body %}
+    <section>
+        <h1>Espace Administration</h1>
+
+        <p>
+            <a href="{{ path('admin_registration') }}">Dévenir administrateur</a>
+        </p>
+
+        <p>
+            <a href="{{ path('admin_login') }}">Se connecter à son compte</a>
+        </p>
+    </section>
+{% endblock %}

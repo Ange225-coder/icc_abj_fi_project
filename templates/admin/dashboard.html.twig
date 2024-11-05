@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin | Tableau de bord{% endblock %}
+
+
+{% block body %}
+    {# message if a FI has been successfully registered #}
+    {% if app.flashes('fi_registration_success') is defined %}
+        {% for fi_registration_success_msg in app.flashes('fi_registration_success') %}
+            {{ fi_registration_success_msg }}
+        {% endfor %}
+    {% endif %}
+
+    <h1>Tableau de bord</h1>
+
+    <p>
+        <a href="{{ path('add_fi') }}">Ajouter une Famille d'Impact</a>
+    </p>
+
+    <p>
+        <a href="#">Liste de toutes les Familles d'Impact</a>
+    </p>
+
+    <p>
+        <a href="{{ path('admin_logout') }}" style="color: red">Déconnexion</a>
+    </p>
+{% endblock %}
